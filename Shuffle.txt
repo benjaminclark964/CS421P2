@@ -1,0 +1,13 @@
+
+
+t(i,j)
+{
+  true                          if i=0 and j=0
+
+  t(i-1,j) * b(Xi,Zi)           if i>0 and j=0
+
+  t(i,j-1) * b(Yj,Zj)           if i=0 and j>0
+
+  (t(i-1,j) * b(Xi,Zi)) +       if i>0 and j>0
+  (t(i,j-1) * b(Yj,Zj))
+}
