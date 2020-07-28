@@ -22,11 +22,8 @@ public class ShuffleDP {
         if(x.length != y.length) { return; }
         table = new int[x.length+1][y.length+1];
         shuffleDP(x, y, z);
-        if(table[table.length-1][table.length-1] == 1) {
-            printResults();
-        } else {
-            printBadResults();
-        }
+        if(table[table.length-1][table.length-1] == 1) { printResults(); }
+        else { printBadResults(); }
     }
 
     /**
