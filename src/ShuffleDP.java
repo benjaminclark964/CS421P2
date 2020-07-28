@@ -11,8 +11,6 @@ public class ShuffleDP {
 
     private static int[][] table = {};
     private static int tableReferences = 0;
-    private static char[] xGlobal = {};
-    private static int used = 0;
 
     public static void main(String[] args) {
         if(args.length != 3) { printErrorMessage(); return; }
