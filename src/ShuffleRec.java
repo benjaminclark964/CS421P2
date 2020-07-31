@@ -20,7 +20,7 @@ public class ShuffleRec {
         char[] y = args[1].toCharArray();
         char[] z = args[2].toCharArray();
         xGlobal = x;
-        if(x.length != y.length) { printBadResults(); return;}
+        if(x.length + y.length != z.length) { printBadResults(); return;}
         if(shuffleRec(x ,y ,z, x.length, y.length)) { printResults(); }
         else { printBadResults(); }
     }
@@ -37,9 +37,7 @@ public class ShuffleRec {
     private static boolean shuffleRec(char[] x, char[] y, char[] z, int i, int j) {
         count++;
         used++;
-        if(count == 5) {
-            int cv = 0;
-        }
+
         //base case
         if((i==0 && j==0)) {
             solutionFound = true;

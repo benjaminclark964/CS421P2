@@ -79,19 +79,6 @@ public class ShuffleDP {
 
 
     /**
-     * Checks if i and j are in bounds
-     * @param i index i
-     * @param j index j
-     * @return true if i and j are in bounds
-     */
-    private static boolean checkIfNotOutOfBounds(int i, int j) {
-        boolean notOutOfBounds = true;
-        if(i < 0 || j < 0) { notOutOfBounds = false; }
-        if(i == table.length || j == table.length) { notOutOfBounds = false; }
-        return notOutOfBounds;
-    }
-
-    /**
      * checks if args are letters
      * @param args the arguments
      * @return boolean
