@@ -19,7 +19,7 @@ public class ShuffleDP {
         char[] x = args[0].toCharArray();
         char[] y = args[1].toCharArray();
         char[] z = args[2].toCharArray();
-        if(x.length != y.length) { return; }
+        if(x.length + y.length != z.length) { return; }
         table = new int[x.length+1][y.length+1];
         shuffleDP(x, y, z);
         if(table[table.length-1][table.length-1] == 1) { printResults(); }
