@@ -69,10 +69,8 @@ public class KnapsackRec {
                 optimalItems.removeFirstOccurrence(i);
             }
         } else {
-            LinkedList<Integer> resetList = new LinkedList<>(optimalItems);
             int op1 = knapSackRec(i-1, j);
             LinkedList<Integer> tmpList = new LinkedList<>(optimalItems);
-            optimalItems = resetList;
             int op2 = knapSackRec(i-1, j-itemWeights[i-1]) + itemValues[i-1];
             optValue = Math.max(op1, op2);
 

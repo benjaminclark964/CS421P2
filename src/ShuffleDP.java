@@ -70,7 +70,7 @@ public class ShuffleDP {
                 else if(x[i-1] == z[i+j-1] &&
                         y[j-1] == z[i+j-1]) {
                     table[i][j] = table[i-1][j] | table[i][j-1];
-                    tableReferences++;
+                    tableReferences+=2;
                 }
             }
         }
