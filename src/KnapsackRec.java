@@ -80,13 +80,11 @@ public class KnapsackRec {
                 if(!optimalItems.contains(i)) {
                     optimalItems.add(i);
                 }
-            } else if(op2 < op1) {
+            } else {
                 optimalItems = tmpList;
                 if(optimalItems.contains(i)) {
                     optimalItems.remove((Integer)i);
                 }
-            } else {
-                optimalItems = resetList;
             }
         }
         return optValue;
